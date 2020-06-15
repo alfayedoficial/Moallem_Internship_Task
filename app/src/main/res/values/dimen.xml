@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	 <dimen name="layout_width_0dp">0dp</dimen>
+	 <dimen name="layout_height_0dp">0dp</dimen>
+	 <dimen name="layout_height_70dp">70dp</dimen>
+	 <dimen name="layout_width_70dp">70dp</dimen>
+	 <dimen name="layout_height_150dp">150dp</dimen>
+	 <dimen name="layout_height_200dp">200dp</dimen>
+	 <dimen name="layout_width_300dp">300dp</dimen>
+
+	 <dimen name="layout_margin_8dp">8dp</dimen>
+	 <dimen name="layout_margin_16dp">16dp</dimen>
+	 <dimen name="layout_margin_24dp">24dp</dimen>
+	 <dimen name="layout_margin_35dp">35dp</dimen>
+
+	 <dimen name="elevation_2dp">24dp</dimen>
+	 <dimen name="elevation_15dp">15dp</dimen>
+	 <dimen name="cardElevation_6dp">6dp</dimen>
+
+
+
+	 <dimen name="textSize_18sp">18sp</dimen>
+	 <dimen name="textSize_30sp">30sp</dimen>
+</resources>

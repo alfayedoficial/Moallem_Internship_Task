@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+	 xmlns:tools="http://schemas.android.com/tools"
+	 android:id="@+id/card_itemVideo_Recycler"
+	 android:layout_width="@dimen/layout_width_300dp"
+	 android:layout_height="@dimen/layout_height_200dp"
+	 android:layout_marginStart="@dimen/layout_margin_8dp"
+	 android:layout_marginTop="@dimen/layout_margin_8dp"
+	 android:layout_marginEnd="@dimen/layout_margin_24dp"
+	 android:layout_marginBottom="@dimen/layout_margin_8dp"
+	 android:elevation="@dimen/elevation_15dp"
+	 app:cardCornerRadius="@dimen/elevation_15dp"
+	 app:cardElevation="@dimen/cardElevation_6dp">
+
+	 <ImageView
+		  android:id="@+id/imgPlayer_itemVideo_Recycler"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_gravity="center"
+		  android:elevation="@dimen/cardElevation_6dp"
+		  app:srcCompat="@drawable/ic_play_video"
+		  tools:ignore="ContentDescription" />
+
+	 <View
+		  android:id="@+id/view"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:background="@drawable/view_shap"
+		  android:elevation="4dp" />
+
+	 <ImageView
+		  android:id="@+id/imgVideo_itemVideo_Recycler"
+		  android:layout_width="match_parent"
+		  android:layout_height="match_parent"
+		  android:layout_gravity="center"
+		  android:elevation="3dp"
+		  android:scaleType="fitXY"
+		  app:srcCompat="@drawable/ic_physics"
+		  tools:ignore="ContentDescription" />
+
+</androidx.cardview.widget.CardView>

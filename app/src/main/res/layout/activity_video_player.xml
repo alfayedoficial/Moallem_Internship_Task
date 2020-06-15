@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+	 xmlns:tools="http://schemas.android.com/tools"
+	 android:layout_width="match_parent"
+	 android:layout_height="match_parent"
+	 tools:context=".view.VideoPlayerActivity">
+
+	 <androidx.constraintlayout.widget.ConstraintLayout
+		  android:id="@+id/static_page"
+		  android:layout_width="match_parent"
+		  android:layout_height="match_parent">
+
+		  <ImageView
+			   android:id="@+id/imgVideo_VideoPlayer"
+			   android:layout_width="@dimen/layout_width_0dp"
+			   android:layout_height="@dimen/layout_height_0dp"
+			   android:scaleType="centerCrop"
+			   android:src="@drawable/ic_launcher_background"
+			   app:layout_constraintBottom_toBottomOf="@+id/imgPlayerBar_VideoPlayer"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintStart_toStartOf="parent"
+			   app:layout_constraintTop_toTopOf="parent"
+			   tools:ignore="ContentDescription" />
+
+		  <ImageView
+			   android:id="@+id/imgPlayerBar_VideoPlayer"
+			   android:layout_width="@dimen/layout_width_0dp"
+			   android:layout_height="wrap_content"
+			   android:elevation="@dimen/elevation_2dp"
+			   android:scaleType="fitXY"
+			   android:src="@drawable/player_youtube"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintStart_toStartOf="parent"
+			   app:layout_constraintTop_toTopOf="parent"
+			   tools:ignore="ContentDescription" />
+
+		  <TextView
+			   android:id="@+id/txtTitle_VideoPlayer"
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_marginStart="@dimen/layout_margin_8dp"
+			   android:layout_marginTop="@dimen/layout_margin_8dp"
+			   app:layout_constraintStart_toStartOf="parent"
+			   app:layout_constraintTop_toBottomOf="@+id/imgVideo_VideoPlayer" />
+
+		  <TextView
+			   android:id="@+id/txtDescription_VideoPlayer"
+			   android:layout_width="@dimen/layout_width_0dp"
+			   android:layout_height="wrap_content"
+			   android:layout_marginTop="@dimen/layout_margin_35dp"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintStart_toStartOf="@+id/txtTitle_VideoPlayer"
+			   app:layout_constraintTop_toTopOf="@+id/txtTitle_VideoPlayer" />
+
+	 </androidx.constraintlayout.widget.ConstraintLayout>
+
+	 <VideoView
+		  android:id="@+id/videoView"
+		  android:elevation="@dimen/elevation_2dp"
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:layout_alignParentStart="true"
+		  android:layout_alignParentTop="true"
+		  android:layout_alignParentEnd="true"
+		  android:layout_alignParentBottom="true"
+		  android:visibility="gone"
+		  app:layout_constraintBottom_toBottomOf="parent"
+		  app:layout_constraintEnd_toEndOf="parent"
+		  app:layout_constraintStart_toStartOf="parent"
+		  app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

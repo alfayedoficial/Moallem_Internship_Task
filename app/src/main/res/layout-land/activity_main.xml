@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="match_parent"
+	 android:layout_height="match_parent"
+	 xmlns:app="http://schemas.android.com/apk/res-auto">
+	 <RelativeLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content">
+		  <androidx.constraintlayout.widget.ConstraintLayout
+			   android:id="@+id/home_MainActivity"
+			   android:layout_width="match_parent"
+			   android:layout_height="match_parent">
+
+			   <TextView
+					android:id="@+id/txtTitleApp_MainActivity"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/layout_margin_16dp"
+					android:layout_marginTop="@dimen/layout_margin_16dp"
+					android:text="@string/activityMain_titleApp"
+					android:textColor="@color/colorPrimary"
+					android:textSize="@dimen/textSize_30sp"
+					android:textStyle="bold"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent" />
+
+			   <ImageButton
+					android:id="@+id/btnMenu_MainActivity"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/layout_margin_16dp"
+					android:background="@android:color/transparent"
+					android:contentDescription="@string/content_description_right_menu_of_app"
+					app:layout_constraintBottom_toBottomOf="@+id/txtTitleApp_MainActivity"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toTopOf="@+id/txtTitleApp_MainActivity"
+					app:srcCompat="@drawable/ic_menu" />
+
+			   <TextView
+					android:id="@+id/txtSubjects_MainActivity"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/layout_margin_24dp"
+					android:text="@string/activityMain_subjects"
+					android:textColor="@color/colorPrimary"
+					android:textStyle="bold"
+					app:layout_constraintStart_toStartOf="@+id/txtTitleApp_MainActivity"
+					app:layout_constraintTop_toBottomOf="@+id/txtTitleApp_MainActivity" />
+
+			   <androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recyclerCategory_MainActivity"
+					android:layout_width="@dimen/layout_width_0dp"
+					android:layout_height="@dimen/layout_height_150dp"
+					android:layout_marginTop="@dimen/layout_margin_16dp"
+					android:clipChildren="false"
+					android:orientation="horizontal"
+					android:overScrollMode="never"
+					app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="@+id/txtSubjects_MainActivity"
+					app:layout_constraintTop_toBottomOf="@+id/txtSubjects_MainActivity" />
+
+			   <TextView
+					android:id="@+id/txtMessage_MainActivity"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/layout_margin_16dp"
+					android:text="@string/activityMain_welcome_back_continue_learning"
+					android:textColor="@color/colorPrimary"
+					android:textSize="@dimen/textSize_18sp"
+					android:textStyle="bold"
+					app:layout_constraintStart_toStartOf="@+id/recyclerCategory_MainActivity"
+					app:layout_constraintTop_toBottomOf="@+id/recyclerCategory_MainActivity" />
+
+			   <androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recyclerVideoPlayer_MainActivity"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/layout_margin_16dp"
+					android:layout_marginBottom="@dimen/layout_margin_16dp"
+					android:orientation="horizontal"
+					app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="@+id/btnMenu_MainActivity"
+					app:layout_constraintStart_toStartOf="@+id/txtMessage_MainActivity"
+					app:layout_constraintTop_toBottomOf="@+id/txtMessage_MainActivity" />
+		  </androidx.constraintlayout.widget.ConstraintLayout>
+
+		  <FrameLayout
+			   android:id="@+id/playVideoFrameLayout"
+			   android:layout_width="match_parent"
+			   android:layout_height="match_parent"
+			   android:visibility="gone" />
+	 </RelativeLayout>
+</ScrollView>

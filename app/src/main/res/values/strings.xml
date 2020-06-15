@@ -1,0 +1,29 @@
+<resources>
+	 <string name="app_name">Moallem Internship Task</string>
+	 <string name="activityMain_welcome_back_continue_learning">Welcome Back!\nContinue
+		  learning?</string>
+	 <string name="activityMain_titleApp">Moallem</string>
+	 <string name="activityMain_subjects">Subjects</string>
+	 <string name="content_description_right_menu_of_app">Right Menu of App</string>
+
+	 <string name="cat_physics">Physics</string>
+	 <string name="cat_biology">Biology</string>
+	 <string name="cat_history">History</string>
+	 <string name="cat_algebra">Algebra</string>
+
+	 <string name="video_name1">Play video1</string>
+	 <string name="video_name2">Play video2</string>
+	 <string name="video_name3">Play video3</string>
+	 <string name="video_name4">Play video4</string>
+	 <string name="video_name5">Play video5</string>
+	 <string name="video_name6">Play video6</string>
+	 <string name="video_name7">Play video7</string>
+	 <string name="video_name8">Play video8</string>
+
+	 <string name="random_description">Lorem ipsum dolor sit amet, usu nominavi facilisi ne, id
+		  graecis tacimates sed, mea dicit efficiendi et. Id qui sale civibus percipit, perfecto patrioque ad vis. Mel autem delectus suavitate ut, mel sint mundi ornatus ea. Dolore tacimates vim ad, molestiae voluptatibus vix cu. Feugiat rationibus at ius.
+Sale errem iuvaret in sed. Bonorum democritum eu sea, eam sint percipitur ut. No graeco placerat senserit mel, no usu simul primis nostrud. Quidam epicuri temporibus ex pro. Quo simul senserit ei, vis ut ridens perpetua. In ius meis novum persius, wisi appetere scribentur cu ius.</string>
+	 <!-- TODO: Remove or change this placeholder text -->
+	 <string name="hello_blank_fragment">Hello blank fragment</string>
+	 <string name="error_message">Sorry , No Have Data</string>
+</resources>
